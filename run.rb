@@ -47,7 +47,7 @@ end
 
 def format_message(rank_list)
   {
-    text: "Hooray! :tada: We are currently placed on (TODO) spot with #{rank_list["Eleonora Nan"]} likes.",
+    text: "Hooray! :tada: We are currently placed on *#{our_rank(rank_list)}* spot with *#{rank_list["Eleonora Nan"]}* likes.",
     attachments: [
       {
         color: "good",
@@ -73,7 +73,7 @@ def show_rank(rank_list)
 end
 
 def our_rank(rank_list)
-#TODO
+  rank_list.to_a.index {|v| v[0] == "Eleonora Nan"} + 1
 end
 
 def hooray(message)
