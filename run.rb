@@ -33,6 +33,7 @@ end
 
 def get_photos(url, photos = [])
   response = Net::HTTP.get(URI(url))
+
   current_page = JSON.parse(response)
   photos = current_page["data"] + photos
   puts "#{photos.count}"
@@ -87,6 +88,7 @@ def hooray(message)
 end
 
 # I will leave this because I love the way you code <3
+# It is not my code dear <3
 def sort()
   n = likes_per_photo.length
   loop do
