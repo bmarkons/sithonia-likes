@@ -89,6 +89,7 @@ end
 
 # I will leave this because I love the way you code <3
 # It is not my code dear <3
+# Oh you naughty little girl...
 def sort()
   n = likes_per_photo.length
   loop do
